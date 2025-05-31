@@ -1,0 +1,34 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:noble@sha256:763eca1839b2c6366f25b9c2b4c75c46e3d485a8d1b95f725e829397398a4c46",
+  "postCreateCommand": "bash ./.devcontainer/post-create.sh",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "mounts": [
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.aws/,target=/home/vscode/.aws/,type=bind,consistency=cached",
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh/keys/,target=/home/vscode/.ssh/keys/,type=bind,consistency=cached"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "GitHub.vscode-pull-request-github",
+        "ms-vsliveshare.vsliveshare",
+        "cweijan.vscode-database-client2",
+        "streetsidesoftware.code-spell-checker",
+        "github.vscode-github-actions",
+        "dbaeumer.vscode-eslint",
+        "GraphQL.vscode-graphql",
+        "GraphQL.vscode-graphql-syntax",
+        "GraphQL.vscode-graphql-execution"
+      ],
+      "settings": {
+        "dev.containers.dockerCredentialHelper": false
+      }
+    }
+  }
+}
