@@ -7,7 +7,9 @@ sudo apt-get upgrade -y
 
 # Install mise
 curl https://mise.run | sh
+echo -e '\n# mise activation' >> ~/.bashrc
 echo 'eval "$(~/.local/bin/mise activate bash)"' >> ~/.bashrc
+echo -e '\n# mise PATH configuration' >> ~/.bash_profile
 echo 'export PATH="$HOME/.local/share/mise/shims:$PATH"' >> ~/.bash_profile
 
 # Enable mise
