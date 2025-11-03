@@ -14,15 +14,15 @@
     "vscode": {
       "extensions": [
         "GitHub.copilot",
+        "openai.chatgpt",
         "eamodio.gitlens",
         "mhutchie.git-graph",
         "ms-vsliveshare.vsliveshare",
         "cweijan.vscode-database-client2",
         "rangav.vscode-thunder-client",
         "streetsidesoftware.code-spell-checker",
-        "github.vscode-github-actions",
         "redhat.vscode-yaml",
-        "amazonwebservices.aws-toolkit-vscode",
+        "github.vscode-github-actions",
         "dbaeumer.vscode-eslint",
         "GraphQL.vscode-graphql",
         "GraphQL.vscode-graphql-syntax",
